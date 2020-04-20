@@ -1,0 +1,7 @@
+spark-submit --class two.WordCount \
+    --master yarn \
+    --deploy-mode cluster \
+    --driver-memory 4g \
+    --executor-memory 2g \
+    --executor-cores 1 \
+    file:///opt/software/gouyang/spark2.3.3.jar \
